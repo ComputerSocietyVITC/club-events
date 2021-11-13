@@ -1,0 +1,6 @@
+*.css
+*.svg
+.env
+public/
+node_modules
+.gitignore
