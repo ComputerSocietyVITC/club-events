@@ -25,3 +25,6 @@ yarn-error.log*
 
 #env
 .env
+
+#Adding package lock to prevent version errors
+package-lock.json 
