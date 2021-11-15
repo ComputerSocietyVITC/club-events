@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
 
@@ -10,11 +10,13 @@ const Navbar = () => (
     <Link to="/" className="pl-8">
       Home
     </Link>
+    <Link to="/events" className="pl-8">
+      Events
+    </Link>
     <div className="cursor-pointer ml-auto p-4">
       <AiOutlineMenu />
     </div>
-    <AiOutlineSearch />
-
+    {useLocation().pathname === '/events' ? <AiOutlineSearch /> : <></>}
     <div>
       <Link to="/login" className="p-4">
         Login
