@@ -1,9 +1,9 @@
 import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
-import Login from './Login';
-import Register from './Register';
-import Home from './Home';
+import Navbar from './navbar/Navbar';
+import Login from './auth/Login';
+import Register from './forms/Register';
+import Home from './Content/Home';
 
 const App = () => (
   <Router>
