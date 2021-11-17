@@ -6,6 +6,7 @@ import Register from './forms/Register';
 import Home from './content/Home';
 import Events from './content/events/Events';
 import IndividualEvent from './content/events/IndivualEvent';
+import Footer from './footer/Footer';
 
 const App = () => (
   <Router>
@@ -15,8 +16,9 @@ const App = () => (
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/events" element={<Events />} />
-      <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
+      <Route path="/events/:eventId" element={<IndividualEvent />} />
     </Routes>
+    <Footer />
   </Router>
 );
 
