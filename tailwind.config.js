@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navbarbg: '#E5E5E5',
+        navbarbg: '#B5CFCF',
         mainbg: '#054E4E',
         darkergreen: '#1F4B58',
         lightergreen: '#00C597',
         brightkindagreen: '#26D457',
+        footercolor: '#B5CFCF',
+        fontdark: '#0F333E',
       },
       fontFamily: {
         normal: ['Arial'],
@@ -38,6 +40,9 @@ module.exports = {
       },
       rotate: {
         neg60: '-50deg',
+      },
+      lineHeight: {
+        0: '0',
       },
     },
   },

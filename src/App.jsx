@@ -7,19 +7,23 @@ import Home from './content/Home';
 import Events from './content/events/Events';
 import IndividualEvent from './content/events/IndivualEvent';
 import Footer from './footer/Footer';
+import { useEffect } from 'react';
 
-const App = () => (
-  <Router>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
-    </Routes>
-    <Footer />
-  </Router>
-);
+const App = () => {
+  useEffect(() => (document.body.style.background = '#0F313E'));
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;

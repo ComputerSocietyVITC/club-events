@@ -62,6 +62,66 @@ const data = [
       total: 60,
     },
   },
+  {
+    name: 'Event Name 1',
+    club: 'Club 1',
+    tags: ['#hackathon', '#mock', 'haha'],
+    when: '04:30pm',
+    availability: {
+      filled: 12,
+      total: 60,
+    },
+  },
+  {
+    name: 'Event Name 2',
+    club: 'Club 2',
+    tags: ['#hackathon', '#mock', 'haha'],
+    when: '04:30pm',
+    availability: {
+      filled: 12,
+      total: 60,
+    },
+  },
+  {
+    name: 'Event Name 3',
+    club: 'Club 1',
+    tags: ['#hackathon', '#mock', 'haha'],
+    when: '04:30pm',
+    availability: {
+      filled: 12,
+      total: 60,
+    },
+  },
+  {
+    name: 'Event Name 1',
+    club: 'Club 1',
+    tags: ['#hackathon', '#mock', 'haha'],
+    when: '04:30pm',
+    availability: {
+      filled: 12,
+      total: 60,
+    },
+  },
+  {
+    name: 'Event Name 2',
+    club: 'Club 2',
+    tags: ['#hackathon', '#mock', 'haha'],
+    when: '04:30pm',
+    availability: {
+      filled: 12,
+      total: 60,
+    },
+  },
+  {
+    name: 'Event Name 3',
+    club: 'Club 1',
+    tags: ['#hackathon', '#mock', 'haha'],
+    when: '04:30pm',
+    availability: {
+      filled: 12,
+      total: 60,
+    },
+  },
 ];
 
 const EventCardTitle = ({ name, club }) => (
@@ -127,10 +187,11 @@ const EventCard = ({ details, idx }) => (
 
 const Events = () => (
   <>
-    {data.map((details, idx) => (
-      <EventCard details={details} idx={idx} key={idx} />
-    ))}
-    <ScrollToTop />
+    <ScrollToTop
+      child={data.map((details, idx) => (
+        <EventCard details={details} idx={idx} key={idx} />
+      ))}
+    />
   </>
 );
 

@@ -4,7 +4,7 @@ const IndividualEvent = () => {
   console.log('this is working');
   const { eventId, eventName } = useParams();
   return (
-    <p>
+    <p className="text-white">
       This is event id {eventId} and it's called {eventName}
     </p>
   );
