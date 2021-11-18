@@ -191,6 +191,7 @@ const Events = () => (
       child={data.map((details, idx) => (
         <EventCard details={details} idx={idx} key={idx} />
       ))}
+      dimInRem={2.75}
     />
   </>
 );
