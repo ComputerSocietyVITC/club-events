@@ -11,9 +11,14 @@ module.exports = {
         brightkindagreen: '#26D457',
         footercolor: '#B5CFCF',
         fontdark: '#0F333E',
+        cyan: '#68E7C8'
+      },
+      borderRadius:{
+        large:'28px',
       },
       fontFamily: {
         normal: ['Arial'],
+        monty: ['Montserrat',]
       },
       screens: {
         '2xl': { max: '1535px' },
@@ -25,10 +30,10 @@ module.exports = {
         lg: { max: '1023px' },
         // => @media (max-width: 1023px) { ... }
 
-        md: { max: '767px' },
+        md: { max: '767px', },
         // => @media (max-width: 767px) { ... }
 
-        sm: { max: '639px' },
+        sm: { min: '639px', },
         // => @media (max-width: 639px) { ... }
       },
       gridTemplateColumns: {
