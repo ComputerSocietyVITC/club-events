@@ -14,6 +14,9 @@ const Navbar = () => (
       <Link to="/events" className="pl-4">
         Events
       </Link>
+      <Link to="/events/CreateEvent" className="pl-4">
+        CreateEvent
+      </Link>
     </div>
     <div>
       {/* add this back in once finalised, for now seems to break some weird margin stuff */}
