@@ -2,12 +2,21 @@ import React from 'react'
 
 function EventInfo() {
     return (
-        <div className='mt-3 text-sm  text-white   md:mt-8 md:text-3xl lg:mt-12 lg:text-4xl'>
-            <p>club events info to be added here</p>
-            <p>club events info to be added here</p>
-            <p>club events info to be added here</p>
-            <p>club events info to be added here</p>
-            <p>club events info to be added here</p>
+        <div className='mt-3  text-xs  text-white  max-w-9/10 md:text-base ml-5 mmd:text-xl mmd:mt-4 mmd:pt-16 pb-16'>
+            <p>club events info to be added here here</p>
+            <p>club events info to be added here here</p>
+            <p>club events info to be added here here</p>
+            <p>club events info to be added here here</p>
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,8 +2,8 @@ import React from 'react'
 
 function Button() {
     return (
-        <button className="mt-10 md:-ml-6 bg-green-500 hover:bg-green-300 text-white font-bold py-6 px-10 md:px-20  border border-blue-700 rounded md:text-xl lg:px-32 lg:py-8 lg:text-4xl">
-            GET Started
+        <button className="mt-8 mb-8 ml-4  max-w-xs bg-green-500 hover:bg-green-300 text-black font-bold   text-sm border border-blue-700 rounded ">
+            Let's Go!
         </button>
     )
 }
