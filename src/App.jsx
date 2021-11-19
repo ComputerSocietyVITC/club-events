@@ -7,6 +7,7 @@ import Home from './content/Home';
 import Events from './content/events/Events';
 import IndividualEvent from './content/events/IndivualEvent';
 import Footer from './footer/Footer';
+import CreateEvent from './content/events/CreateEvent';
 import { useEffect } from 'react';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/events/CreateEvent" element={<CreateEvent />} />
         <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
       </Routes>
       <Footer />
