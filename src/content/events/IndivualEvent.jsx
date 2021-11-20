@@ -8,7 +8,7 @@ const IndividualEvent = () => {
         <section className="row-start-1 row-span-4">
           <section className="text-white font-monty text-center">
             <section className="pl-6 py-4 grid grid-cols-6 sm:grid-cols-6 md:grid-cols-6">
-              <section className="px-200 col-start-1 rounded-full h-24 w-24 bg-cyan " />
+              <section className="col-start-1 rounded-full h-24 w-24 bg-cyan " />
               <section className="col-start-2 font-monty text-white text-left">
                 <section className="grid grid-rows-10 gap-4">
                   <section className="row-start-1 row-span-2 Indievents-title">[Title]</section>
