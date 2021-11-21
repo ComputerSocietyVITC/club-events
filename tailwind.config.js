@@ -25,11 +25,35 @@ module.exports = {
         brightkindagreen: '#26D457',
         footercolor: '#B5CFCF',
         fontdark: '#0F333E',
+        cyan: '#68E7C8'
+      },
+      borderRadius: {
+        large: '28px',
       },
       fontFamily: {
         normal: ['Arial'],
+        monty: ['Montserrat',]
       },
+      screens: {
+        '2mxl': { max: '1535px' },
+        // => @media (max-width: 1535px) { ... }
 
+        mxl: { max: '1279px' },
+        // => @media (max-width: 1279px) { ... }
+
+        mlg: { max: '1023px' },
+        // => @media (max-width: 1023px) { ... }
+
+        mmd: { max: '767px', },
+        // => @media (max-width: 767px) { ... }
+
+        msm: { min: '639px', },
+        // => @media (max-width: 639px) { ... }
+
+        mxs: { max: '359px' },
+        // => @media (max-width: 359px) { ... }
+
+      },
       gridTemplateColumns: {
         '2to1': '2fr 1fr',
       },
