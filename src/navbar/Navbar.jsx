@@ -14,7 +14,7 @@ const Navbar = () => (
       <Link to="/events" className="pl-4">
         Events
       </Link>
-      <Link to="/events/CreateEvent" className="pl-4">
+      <Link to="/events/create-event" className="pl-4">
         CreateEvent
       </Link>
     </div>
