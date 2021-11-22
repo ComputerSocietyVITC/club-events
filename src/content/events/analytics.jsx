@@ -5,7 +5,7 @@ const UserCard = ({ username, photo }) => {
     width: 50,
     borderRadius: 28,
   };
-//    
+  //
   return (
     <section className="py-2 h-16 pl-4 mb-4 my-4 rounded-large  text-4xl align-center text-white font-bold bg-innerboxgreen">
       {username}

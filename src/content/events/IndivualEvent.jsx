@@ -16,7 +16,6 @@ const SubTitle = ({ subTitle }) => (
   <div className="font-bold text-2xl row-start-2 col-start-2 md:mt-6">{subTitle}</div>
 );
 
-
 const Location = ({ location }) => (
   <div className="row-start-3 col-start-2 xl:col-start-1 col-end-3 w-max flex justify-center items-center bg-cyan rounded-full text-black font-bold p-2 my-3">
     Location: {location}
