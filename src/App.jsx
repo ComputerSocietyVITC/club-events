@@ -4,6 +4,7 @@ import { useEffect, lazy, Suspense } from 'react';
 
 import Navbar from './navbar/Navbar';
 import Footer from './footer/Footer';
+
 //we don't want navbar and footer to be lazy loaded
 
 //lazy load all routes when the user actually navigates to them -- better UX
@@ -15,6 +16,10 @@ const Events = lazy(() => import('./content/events/Events'));
 const EventAnalytics = lazy(() => import('./content/events/analytics'));
 const IndividualEvent = lazy(() => import('./content/events/IndivualEvent'));
 const CreateEvent = lazy(() => import('./content/events/CreateEvent'));
+const Dashboard = lazy(() => import('./content/Dashboard'));
+
+import { useEffect } from 'react';
+
 
 const App = () => {
   useEffect(() => (document.body.style.background = '#0F313E'));
@@ -31,6 +36,7 @@ const App = () => {
           <Route path="/events/create-event" element={<CreateEvent />} />
           <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
           <Route path="/events/:eventId/:eventName/analytics" element={<EventAnalytics />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Suspense>
       <Footer />
