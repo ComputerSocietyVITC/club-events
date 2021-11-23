@@ -18,8 +18,6 @@ const IndividualEvent = lazy(() => import('./content/events/IndivualEvent'));
 const CreateEvent = lazy(() => import('./content/events/CreateEvent'));
 const Dashboard = lazy(() => import('./content/Dashboard'));
 
-import { useEffect } from 'react';
-
 
 const App = () => {
   useEffect(() => (document.body.style.background = '#0F313E'));
