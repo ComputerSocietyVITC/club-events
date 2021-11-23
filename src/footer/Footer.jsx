@@ -4,7 +4,7 @@ import { AiOutlineGithub } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
 const Footer = () => {
   return (
-    <div className="bg-footercolor pt-8 pb-8 absolute w-full bottom-0">
+    <div className="bg-footercolor pt-8 pb-8 bottom-0">
       {/* <h2 className="w-full text-center border-solid border-b-2 leading-0 border-black mt-3 mb-5">
         <span className="bg-footercolor px-10 font-extrabold">CONTACT US!</span>
       </h2>
@@ -27,7 +27,7 @@ const Footer = () => {
         </a>
       </div> */}
       <h2 className="w-full text-center border-solid border-b-2 leading-0 border-black mt-3 mb-5 ">
-        <span className="bg-footercolor px-10 font-extrabold">Powered by IEEE Computer Society, VIT Chennai</span>
+        <span className="bg-footercolor px-10 font-bold">Powered by IEEE Computer Society, VIT Chennai</span>
       </h2>
     </div>
   );
