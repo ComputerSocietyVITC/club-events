@@ -9,6 +9,7 @@ import EventAnalytics from './content/events/analytics';
 import IndividualEvent from './content/events/IndivualEvent';
 import Footer from './footer/Footer';
 import CreateEvent from './content/events/CreateEvent';
+import Dashboard from './content/Dashboard'
 import { useEffect } from 'react';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/events" element={<Events />} />
         <Route path="/events/create-event" element={<CreateEvent />} />
+        <Route path="/events/dashboard" element={<Dashboard />} />
         <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
         <Route path="/events/:eventId/:eventName/Analytics" element={<EventAnalytics/>}/>
       </Routes>
