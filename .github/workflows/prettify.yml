@@ -18,6 +18,7 @@ jobs:
       - name: Setup
         run: npm install
       - name: Formatting
+        continue-on-error: true
         run: npm run format
       - name: Linting
         run: npm run lint
