@@ -70,13 +70,6 @@ module.exports = {
         mxs: { min: '359px' },
         // => @media (max-width: 359px) { ... }
       },
-      inset: {
-        ecmleft: '-17rem',
-        ecmtop: '-5rem',
-      },
-      rotate: {
-        neg60: '-50deg',
-      },
       lineHeight: {
         0: '0',
       },
