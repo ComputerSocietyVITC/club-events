@@ -1,48 +1,37 @@
 import { ReactComponent as Blob1 } from '../Assets/Svg/blob1.svg';
 import { ReactComponent as Blob2 } from '../Assets/Svg/blob2.svg';
 import { ReactComponent as Illustration } from '../Assets/Svg/illustration.svg';
-import EventInfo from '../Components/EventInfo';
-import Button from '../Components/Button';
 
-
+const EventInfo = () => (
+  <div className="mt-3  text-xs  text-white  max-w-9/10 md:text-base ml-5 mmd:text-xl mmd:mt-4 mmd:pt-8 pb-8">
+    <p>club events info to be added here here</p>
+    <p>club events info to be added here here</p>
+    <p>club events info to be added here here</p>
+    <p>club events info to be added here here</p>
+  </div>
+);
 
 const Home = () => {
   return (
-    <div className='w-full flex flex-row h-full'>
-
-      <div className='flex flex-col   flex-1 '>
-        <div className='absolute mmd:mt-4  '>
-
-          <h1 className='md:text-3xl px-6 mt-8  font-bold text-white  mmd:mt-12 mmd:ml-8 mmd:text-5xl mlg:text-6xl'>VIT CHENNAI</h1>
-          <h1 className='md:text-3xl px-6 font-bold text-white  mmd:mt-2  mmd:ml-8   mmd:text-5xl mlg:text-6xl '>CLUB EVENTS!</h1>
-
+    <div className="w-100vh flex flex-1 flex-col h-full overflow-hidden">
+      <div className="flex flex-col justify-start">
+        <Blob1 className="h-40 w-48 msm:h-48 msm:w-56 mmd:h-72 mmd:w-80 mlg:h-sm mlg:w-md" />
+        <div className="ml-8 mt-8 text-4xl absolute text-white font-bold msm:text-5xl mmd:text-6xl mmd:mt-16 mlg:mt-28 mlg:ml-24 mlg:text-8xl ">
+          <h1>Vit Chennai</h1>
+          <h1>Club Events</h1>
         </div>
-        <Blob1 className='md:h-40 md:w-48 mmd:h-96 mmd:w-96 mmd:-mt-12 mlg:h-96 mlg:w-1/2 mlg:mt-24' />
         <EventInfo />
-        <Button />
+        <button className="ml-6 mt-2 h-8 mb-4 w-32 bg-lightergreen hover:bg-green-500 text-black font-bold text-sm border border-blue-700 rounded-full mmd:w-60 mmd:h-16 mmd:text-2xl mlg:h-20 mlg:w-72 ">
+          Let's Go!
+        </button>
       </div>
-
-      <div className='flex-row mmd:flex-1 mt-12  overflow-hidden '>
-
-
-        <Illustration className=' xs:w-32 xs:h-64 ml-0 md:h-64 md:w-64 mmd:h-96 w-sm mlg:absolute mlg:ml-16 mlg:w-sm' />
-
-        <Blob2 className=' lg:h-0 lg:w-0 h-sm w-auto ml:64 mxl:ml-80  overflow-hidden  mlg:mt-48' />
-
+      <div />
+      <div className="flex justify-end mxl:-mt-40">
+        <Illustration className="h-64 w-48 absolute -mt-28 msm:w-64 mmd:h-72 mmd:w-80  mmd:-mt-36 mlg:h-sm mlg:w-md mlg:-mt-64" />
+        <Blob2 className="h-40 w-52 msm:h-40 msm:w-48 mmd:h-64 mmd:w-72 mlg:h-md mlg:w-lg" />
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-  )
-}
-
-
+  );
+};
 
 export default Home;

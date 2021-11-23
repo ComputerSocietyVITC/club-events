@@ -18,10 +18,12 @@
     background: #00C597;
     border-radius: 0.6vw;
   }
-  .Indievents-title{
-    font-size: 40px;
-  }
-  .Indievents-subtitle{
-    font-size:24px;
-  }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,51%);
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: rgba(0,0,0,51%);
+}
   

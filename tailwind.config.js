@@ -9,7 +9,6 @@ module.exports = {
         lg: '512px',
         xl: '576px',
         xxl: '640px',
-
       },
       maxWidth: {
         '1/4': '25%',
@@ -25,14 +24,15 @@ module.exports = {
         brightkindagreen: '#26D457',
         footercolor: '#B5CFCF',
         fontdark: '#0F333E',
-        cyan: '#68E7C8'
+        cyan: '#68E7C8',
+        whitekindacolor: '#B5CFCF',
       },
-      borderRadius:{
-        large:'28px',
+      borderRadius: {
+        large: '28px',
       },
       fontFamily: {
-        normal: ['Arial'],
-        monty: ['Montserrat',]
+        normal: ['Montserrat'],
+        monty: ['Montserrat'],
       },
       screens: {
         '2xl': { max: '1535px' },
@@ -44,10 +44,10 @@ module.exports = {
         lg: { max: '1023px' },
         // => @media (max-width: 1023px) { ... }
 
-        md: { max: '767px', },
+        md: { max: '767px' },
         // => @media (max-width: 767px) { ... }
 
-        sm: { min: '639px', },
+        sm: { max: '639px' },
         // => @media (max-width: 639px) { ... }
 
         xs: { max: '359px' },
@@ -69,10 +69,14 @@ module.exports = {
 
         mxs: { min: '359px' },
         // => @media (max-width: 359px) { ... }
-
       },
       gridTemplateColumns: {
-        '2to1': '2fr 1fr',
+        'individual-event-details-left': '12ch 4fr',
+        'individual-event-details-right': '5fr 1fr',
+      },
+      gridTemplateRows: {
+        'individual-event-details-left': '2.6fr 1fr 1fr 1fr 1fr',
+        'individual-event-details-right': '1fr 1fr 2fr',
       },
       inset: {
         ecmleft: '-17rem',

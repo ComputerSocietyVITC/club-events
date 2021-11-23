@@ -9,7 +9,11 @@ const Footer = () => {
         <span className="bg-footercolor px-10 font-extrabold">CONTACT US!</span>
       </h2>
       <div className="flex justify-center space-x-4 mb-2">
-        <a href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillLinkedin size="25px" className="cursor-pointer" />
         </a>
         <a href="https://www.instagram.com/comsoc.vitcc/" target="_blank" rel="noopener noreferrer">

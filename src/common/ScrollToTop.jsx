@@ -20,7 +20,9 @@ const ScrollToTop = ({ child, dimInRem }) => {
       {visible && (
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`bg-lightergreen rounded-full absolute bottom-5 right-5 lg:hidden z-50 cursor-pointer w-${(dimInRem || 2)*4} h-auto`}
+          className={`bg-lightergreen rounded-full absolute bottom-5 right-5 lg:hidden z-50 cursor-pointer w-${
+            (dimInRem || 2) * 4
+          } h-auto`}
         >
           <img
             width="64"
