@@ -1,4 +1,4 @@
-.rbc-month-row, .rbc-today, .rbc-timeslot-group,.rbc-allday-cell {
+.rbc-month-row, .rbc-today, .rbc-timeslot-group,.rbc-allday-cell, .rbc-agenda-table {
     background-color: #00C597;
 }
 .rbc-header{
@@ -8,7 +8,7 @@
     font-size: 20px;
     border: 0px;
 }
-.rbc-btn-group{
+.rbc-btn-group, .rbc-time-header-gutter{
     background-color: #222;
 }
 .rbc-btn-group > button{
@@ -27,4 +27,7 @@
 }
 .rbc-date-cell{
     font-size: 20px;
+}
+.rbc-time-header-cell{
+    height: 65px;
 }
