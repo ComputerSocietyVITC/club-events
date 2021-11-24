@@ -42,7 +42,7 @@ const EventDetailsLeftPart = ({
   registrationDeadline,
   teamSize,
 }) => (
-  <div className="grid gap-x-4 grid-cols-individual-event-details-left grid-rows-individual-event-details-left text-white">
+  <div className="grid gap-x-4 grid-cols-[12ch,4fr] grid-rows-[2.6fr,1fr,1fr,1fr,1fr] text-white">
     <Logo {...{ logoURL }} />
     <Title {...{ title }} />
     <SubTitle {...{ subTitle }} />
@@ -107,7 +107,7 @@ const DaysLeftAndRegistered = ({ daysLeft, registeredSoFar }) => (
 );
 
 const EventDetailsRightPart = ({ dateAndTime, daysLeft, registeredSoFar }) => (
-  <div className="grid gap-3 grid-rows-individual-event-details-right grid-cols-individual-event-details-right p-1 mt-2">
+  <div className="grid gap-3 grid-rows-[1fr,1fr,2fr] grid-cols-[5fr,1fr] p-1 mt-2">
     <RegisterButton />
     <CalendarThingy />
     <DateAndTime {...{ dateAndTime }} />

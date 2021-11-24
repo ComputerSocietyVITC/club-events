@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -69,21 +69,6 @@ module.exports = {
 
         mxs: { min: '359px' },
         // => @media (max-width: 359px) { ... }
-      },
-      gridTemplateColumns: {
-        'individual-event-details-left': '12ch 4fr',
-        'individual-event-details-right': '5fr 1fr',
-      },
-      gridTemplateRows: {
-        'individual-event-details-left': '2.6fr 1fr 1fr 1fr 1fr',
-        'individual-event-details-right': '1fr 1fr 2fr',
-      },
-      inset: {
-        ecmleft: '-17rem',
-        ecmtop: '-5rem',
-      },
-      rotate: {
-        neg60: '-50deg',
       },
       lineHeight: {
         0: '0',
