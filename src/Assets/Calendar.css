@@ -1,0 +1,33 @@
+.rbc-month-row, .rbc-today, .rbc-timeslot-group,.rbc-allday-cell, .rbc-agenda-table {
+    background-color: #00C597;
+}
+.rbc-header{
+    background-color: #222;
+    color: #00C597;
+    padding: 6px;
+    font-size: 20px;
+    border: 0px;
+}
+.rbc-btn-group, .rbc-time-header-gutter{
+    background-color: #222;
+}
+.rbc-btn-group > button{
+    color: #00C597;
+}
+.rbc-btn-group > button.rbc-active{
+    color: #222;
+}
+.rbc-toolbar-label{
+    color: #00C597;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.rbc-toolbar{
+    margin-bottom: 30px;
+}
+.rbc-date-cell{
+    font-size: 20px;
+}
+.rbc-time-header-cell{
+    height: 65px;
+}
