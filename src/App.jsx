@@ -18,6 +18,7 @@ const IndividualEvent = lazy(() => import('./content/events/IndivualEvent'));
 const CreateEvent = lazy(() => import('./content/events/CreateEvent'));
 const Dashboard = lazy(() => import('./content/Dashboard'));
 const Calendar = lazy(() => import('./content/Calendar'));
+const CreateForm = lazy(() => import('./content/CreateForm'));
 
 const App = () => {
   useEffect(() => (document.body.style.background = '#0F313E'));
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/events/:eventId/:eventName/analytics" element={<EventAnalytics />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/createform" element={<CreateForm />} />
         </Routes>
       </Suspense>
       <Footer />
