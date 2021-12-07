@@ -7,6 +7,8 @@ module.exports = {
         navbarbg: '#B5CFCF',
         mainbg: '#054E4E',
         darkergreen: '#1F4B58',
+        boxgreen:'#136267',
+        innerboxgreen:'#1F4B58',
         lightergreen: '#00C597',
         brightkindagreen: '#26D457',
         footercolor: '#B5CFCF',

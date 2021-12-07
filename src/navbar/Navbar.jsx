@@ -4,7 +4,7 @@ import { Link /*useLocation*/ } from 'react-router-dom';
 
 const Navbar = () => (
   <nav
-    className="flex justify-between items-center h-16 relative shadow-sm font-semibold text-fontblack bg-navbarbg"
+    className="flex justify-between items-center h-16 relative shadow-sm font-monty font-semibold text-fontblack bg-navbarbg"
     role="navigation"
   >
     <div>
