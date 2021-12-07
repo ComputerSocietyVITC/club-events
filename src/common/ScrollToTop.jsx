@@ -11,7 +11,7 @@ relative-positioned container like so
 
 */
 
-const ScrollToTop = ({ child }) => {
+const ScrollToTop = ({ child, dimInRem }) => {
   const [visible, setVisible] = useState(false);
   useEffect(() => window.addEventListener('scroll', () => setVisible(window.scrollY > 300)), []);
   return (
@@ -20,7 +20,9 @@ const ScrollToTop = ({ child }) => {
       {visible && (
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="bg-lightergreen rounded-full absolute bottom-5 right-5 lg:hidden z-50 cursor-pointer"
+          className={`bg-lightergreen rounded-full absolute bottom-5 right-5 lg:hidden z-50 cursor-pointer w-${
+            (dimInRem || 2) * 4
+          } h-auto`}
         >
           <img
             width="64"

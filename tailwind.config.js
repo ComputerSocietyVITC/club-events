@@ -1,8 +1,21 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        sm: '432px',
+        md: '448px',
+        lg: '512px',
+        xl: '576px',
+        xxl: '640px',
+      },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        '9/10': '90%',
+      },
       colors: {
         navbarbg: '#B5CFCF',
         mainbg: '#054E4E',
@@ -13,14 +26,15 @@ module.exports = {
         brightkindagreen: '#26D457',
         footercolor: '#B5CFCF',
         fontdark: '#0F333E',
-        cyan: '#68E7C8'
+        cyan: '#68E7C8',
+        whitekindacolor: '#B5CFCF',
       },
-      borderRadius:{
-        large:'28px',
+      borderRadius: {
+        large: '28px',
       },
       fontFamily: {
-        normal: ['Arial'],
-        monty: ['Montserrat',]
+        normal: ['Montserrat'],
+        monty: ['Montserrat'],
       },
       screens: {
         '2xl': { max: '1535px' },
@@ -32,21 +46,31 @@ module.exports = {
         lg: { max: '1023px' },
         // => @media (max-width: 1023px) { ... }
 
-        md: { max: '767px', },
+        md: { max: '767px' },
         // => @media (max-width: 767px) { ... }
 
-        sm: { min: '639px', },
+        sm: { max: '639px' },
         // => @media (max-width: 639px) { ... }
-      },
-      gridTemplateColumns: {
-        '2to1': '2fr 1fr',
-      },
-      inset: {
-        ecmleft: '-17rem',
-        ecmtop: '-5rem',
-      },
-      rotate: {
-        neg60: '-50deg',
+
+        xs: { max: '359px' },
+        // => @media (max-width: 359px) { ... }
+        '2mxl': { min: '1535px' },
+        // => @media (max-width: 1535px) { ... }
+
+        mxl: { min: '1279px' },
+        // => @media (max-width: 1279px) { ... }
+
+        mlg: { min: '1023px' },
+        // => @media (max-width: 1023px) { ... }
+
+        mmd: { min: '767px' },
+        // => @media (max-width: 767px) { ... }
+
+        msm: { min: '639px' },
+        // => @media (max-width: 639px) { ... }
+
+        mxs: { min: '359px' },
+        // => @media (max-width: 359px) { ... }
       },
       lineHeight: {
         0: '0',
@@ -56,5 +80,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };

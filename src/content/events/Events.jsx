@@ -178,7 +178,7 @@ const EventCardGoTo = ({ id, name }) => {
 const EventCard = ({ details, idx }) => (
   <div className="flex flex-row flex-wrap items-center justify-center col-start-1">
     <div className="bg-darkergreen m-5 px-8 sm:px-2 py-2 rounded-xl grid grid-cols-3 grid-rows-2 relative overflow-hidden">
-      <div className="z-0 rounded-2xl w-96 h-96 bg-lightergreen transform rotate-45 absolute -left-48 -top-16 sm:rotate-neg60 sm:left-ecmleft sm:top-ecmtop"></div>
+      <div className="z-0 rounded-2xl w-96 h-96 bg-lightergreen transform rotate-45 absolute -left-48 -top-16 sm:-rotate-60 sm:-left-64 sm:-top-20"></div>
       <EventCardTitle {...details} />
       <EventCardInfo {...details} />
       <EventCardGoTo id={idx} name={details.name} />
@@ -192,6 +192,7 @@ const Events = () => (
       child={data.map((details, idx) => (
         <EventCard details={details} idx={idx} key={idx} />
       ))}
+      dimInRem={2.75}
     />
   </>
 );
