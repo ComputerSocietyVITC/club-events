@@ -7,7 +7,7 @@ import { CgAttachment } from 'react-icons/cg';
 const InnerBox = ({Name}) => {
   return(
     <>
-      <section className='my-2 mx-4 py-4 px-4 bg-innerboxgreen text-white font-monty'>
+      <section className='my-2 mx-4 py-4 px-4 bg-innerboxgreen text-white font-monty rounded-large'>
         <section className='grid grid-cols-8'>
           <section className='col-start-1'>
             <img style = {{
