@@ -1,7 +1,7 @@
-import { AiFillLinkedin } from 'react-icons/ai';
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { AiOutlineGithub } from 'react-icons/ai';
-import { FaDiscord } from 'react-icons/fa';
+// import { AiFillLinkedin } from 'react-icons/ai';
+// import { AiOutlineInstagram } from 'react-icons/ai';
+// import { AiOutlineGithub } from 'react-icons/ai';
+// import { FaDiscord } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className="bg-footercolor pt-8 pb-8 bottom-0">

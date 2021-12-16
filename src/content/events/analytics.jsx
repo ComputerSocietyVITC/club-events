@@ -1,29 +1,27 @@
 import { useState } from 'react';
 import { BiArrowBack } from 'react-icons/bi';
-import { BsFillPlusCircleFill, BsToggle2Off, BsToggle2On } from 'react-icons/bs';
-import { CgAttachment } from 'react-icons/cg';
 
-
-const InnerBox = ({Name}) => {
-  return(
+const InnerBox = ({ Name }) => {
+  return (
     <>
-      <section className='my-2 mx-4 py-4 px-4 bg-innerboxgreen text-white font-monty rounded-large'>
-        <section className='grid grid-cols-8'>
-          <section className='col-start-1'>
-            <img style = {{
-              height:60,
-              width:60,
-              borderRadius:60
-            }}src="https://png.pngitem.com/pimgs/s/105-1050694_user-placeholder-image-png-transparent-png.png"/>
+      <section className="my-2 mx-4 py-4 px-4 bg-innerboxgreen text-white font-monty rounded-large">
+        <section className="grid grid-cols-8">
+          <section className="col-start-1">
+            <img
+              style={{
+                height: 60,
+                width: 60,
+                borderRadius: 60,
+              }}
+              src="https://png.pngitem.com/pimgs/s/105-1050694_user-placeholder-image-png-transparent-png.png"
+            />
           </section>
-          <section className='center col-start-2 col-span-3'>
-            {Name}
-          </section>
+          <section className="center col-start-2 col-span-3">{Name}</section>
         </section>
       </section>
     </>
-  )
-}
+  );
+};
 
 const EventAnalytics = () => {
   const Iconstyles = {
@@ -51,10 +49,10 @@ const EventAnalytics = () => {
             </section>
             <section className="py-3 text-white font-monty font-bold">Registered Users</section>
             <section className="py-4 bg-boxgreen rounded-large px-2 h-full">
-              <InnerBox Name = "Participant 1"/>
-              <InnerBox Name = "Participant 2"/>
-              <InnerBox Name = "Participant 3"/>
-              <InnerBox Name = "Participant 4"/>
+              <InnerBox Name="Participant 1" />
+              <InnerBox Name="Participant 2" />
+              <InnerBox Name="Participant 3" />
+              <InnerBox Name="Participant 4" />
             </section>
           </section>
         </section>

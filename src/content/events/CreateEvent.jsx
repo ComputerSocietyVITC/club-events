@@ -8,19 +8,7 @@ const CreateEvent = () => {
     height: '50px',
     width: '50px',
   };
-  const [event, setEvent] = useState('');
   const [toggle, setToggle] = useState(true);
-  const [category, setCategory] = useState(' ');
-  const [size, setSize] = useState();
-  const [show, setShow] = useState(false);
-  const [info, setInfo] = useState();
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log('');
-  };
-  const handleClick = () => {
-    setShow(!show);
-  };
   return (
     <section className="grid xl:grid-cols-12 lg:grid-cols-12 sm:grid-cols-6">
       <section className="pl-10 pr-2 py-3 col-start-1">
