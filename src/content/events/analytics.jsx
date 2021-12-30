@@ -1,46 +1,65 @@
-import { AiOutlineArrowLeft } from 'react-icons/ai';
-const UserCard = ({ username, photo }) => {
-  const roundstyle = {
-    height: 50,
-    width: 50,
-    borderRadius: 28,
-  };
-  //
-  return (
-    <section className="py-2 h-16 pl-4 mb-4 my-4 rounded-large  text-4xl align-center text-white font-bold bg-innerboxgreen">
-      {username}
-    </section>
-  );
-};
+import { useState } from 'react';
+import { BiArrowBack } from 'react-icons/bi';
+import { BsFillPlusCircleFill, BsToggle2Off, BsToggle2On } from 'react-icons/bs';
+import { CgAttachment } from 'react-icons/cg';
+
+
+const InnerBox = ({Name}) => {
+  return(
+    <>
+      <section className='my-2 mx-4 py-4 px-4 bg-innerboxgreen text-white font-monty rounded-large'>
+        <section className='grid grid-cols-8'>
+          <section className='col-start-1'>
+            <img style = {{
+              height:60,
+              width:60,
+              borderRadius:60
+            }}src="https://png.pngitem.com/pimgs/s/105-1050694_user-placeholder-image-png-transparent-png.png"/>
+          </section>
+          <section className='center col-start-2 col-span-3'>
+            {Name}
+          </section>
+        </section>
+      </section>
+    </>
+  )
+}
 
 const EventAnalytics = () => {
+  const Iconstyles = {
+    height: '50px',
+    width: '50px',
+  };
+  const [toggle, setToggle] = useState(true);
   return (
-    <section className="grid grid-cols-12">
-      <section className="col-start-1 col">
-        <section className="pl-12 py-8 text-4xl text-white">
-          <AiOutlineArrowLeft />
+    <>
+      <section className=" py-2 grid grid-cols-8 xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4">
+        <section className="pl-10 text-white text-3xl col-start-1 col-span-1">
+          <BiArrowBack />
         </section>
-      </section>
-      <section className="col-start-2 col-span-10">
-        <section className="grid grid-row-3 gap-2">
-          <section className="py-4 font-monty font-bold text-4xl text-white">
+        <section className="col-start-2 col-span-6 gap-2">
+          <section className="py-2 text-white font-monty font-bold text-3xl">
             Event Analytics
           </section>
-          <section className="font-monty font-bold  text-white">
-            <section className="text-3xl">Hosted By</section>
-            <section className="mb-10 px-4 py-1 w-max text-2.5xl rounded-full bg-boxgreen">
-              [CLUB LOREM IPSUM DOLOR SIT AMET]
-            </section>
+          <section className="py-2 text-white font-monty font-bold text-2xl">
+            Time-Left : [TIME]
           </section>
-          <section className="text-white text-3xl font-monty font-bold">Registered Users</section>
-          <section className="px-4 text-white rounded-large bg-boxgreen">
-            <UserCard username={'Abhijith'} />
-            <UserCard username={'Abhijith'} />
-            <UserCard username={'Abhijith'} />
+          <section className="py-2 text-white font-monty font-bold text-2xl">
+            Hosted By
+            <section className="mt-2 px-3 rounded-large bg-boxgreen w-full">
+              IEEE Computer Society
+            </section>
+            <section className="py-3 text-white font-monty font-bold">Registered Users</section>
+            <section className="py-4 bg-boxgreen rounded-large px-2 h-full">
+              <InnerBox Name = "Participant 1"/>
+              <InnerBox Name = "Participant 2"/>
+              <InnerBox Name = "Participant 3"/>
+              <InnerBox Name = "Participant 4"/>
+            </section>
           </section>
         </section>
       </section>
-    </section>
+    </>
   );
 };
 

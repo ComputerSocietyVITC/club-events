@@ -133,7 +133,7 @@ const EventCardTitle = ({ name, club }) => (
 
 const EventCardInfoItem = ({ svgURL, text }) => (
   <div className="flex">
-    <img className="filter invert h-5 w-auto mr-2 mt-1" src={svgURL} />
+    <img className="filter invert h-5 w-auto mr-2 mt-1" src={svgURL} alt="svg" />
     <div>{text}</div>
   </div>
 );
@@ -168,6 +168,7 @@ const EventCardGoTo = ({ id, name }) => {
           width="64"
           height="64"
           src="https://unpkg.com/ionicons@5.5.2/dist/svg/chevron-forward-outline.svg"
+          alt="Right"
         ></img>
       </Link>
     </div>

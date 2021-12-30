@@ -28,6 +28,7 @@ const ScrollToTop = ({ child, dimInRem }) => {
             width="64"
             height="64"
             src="https://unpkg.com/ionicons@5.5.2/dist/svg/arrow-up-outline.svg"
+            alt = "arrow up"
           />
         </div>
       )}
