@@ -7,7 +7,7 @@ import Footer from './footer/Footer';
 
 //we don't want navbar and footer to be lazy loaded
 
-//lazy load all routes when the user actually navigates to them -- better UX
+//lazy load all routes when the user actually navigates to them
 //ALL imports MUST be default for this to work. Only do `export default Component`
 const Login = lazy(() => import('./auth/Login'));
 const Register = lazy(() => import('./forms/Register'));
@@ -32,6 +32,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/events" element={<Events />} />
+          {/* Wrap any auth required route in <Private> </Private>.
+          That is all that is required */}
           <Route path="/events/create-event" element={<CreateEvent />} />
           <Route path="/events/:eventId/:eventName" element={<IndividualEvent />} />
           <Route path="/events/:eventId/:eventName/analytics" element={<EventAnalytics />} />
