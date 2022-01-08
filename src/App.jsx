@@ -15,7 +15,7 @@ const Register = lazy(() => import('./forms/Register'));
 const Home = lazy(() => import('./content/Home'));
 const Events = lazy(() => import('./content/events/Events'));
 const EventAnalytics = lazy(() => import('./content/events/analytics'));
-const IndividualEvent = lazy(() => import('./content/events/IndivualEvent'));
+const IndividualEvent = lazy(() => import('./content/events/Details'));
 const CreateEvent = lazy(() => import('./content/events/CreateEvent'));
 const Dashboard = lazy(() => import('./content/Dashboard'));
 const Calendar = lazy(() => import('./content/Calendar'));

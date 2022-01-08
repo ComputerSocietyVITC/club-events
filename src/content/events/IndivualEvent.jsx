@@ -1,5 +1,3 @@
-import CenteredContent from '../../common/CenteredContent';
-
 const Logo = ({ logoURL }) => (
   <div className="flex justify-center items-center row-start-1 col-start-1 lg:row-span-2">
     <img src={logoURL} />
@@ -114,6 +112,7 @@ const EventDetailsRightPart = ({ dateAndTime, daysLeft, registeredSoFar }) => (
     <DaysLeftAndRegistered {...{ daysLeft, registeredSoFar }} />
   </div>
 );
+
 
 const EventDetails = ({
   logoURL,
