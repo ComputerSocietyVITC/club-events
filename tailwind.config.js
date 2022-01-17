@@ -15,6 +15,7 @@ module.exports = {
         '1/2': '50%',
         '3/4': '75%',
         '9/10': '90%',
+        '28':'28px',
       },
       colors: {
         navbarbg: '#B5CFCF',
@@ -28,6 +29,8 @@ module.exports = {
         fontdark: '#0F333E',
         cyan: '#68E7C8',
         whitekindacolor: '#B5CFCF',
+        buttonColor:'#65E8C8',
+        dull:'#F2F2F2'
       },
       borderRadius: {
         large: '28px',

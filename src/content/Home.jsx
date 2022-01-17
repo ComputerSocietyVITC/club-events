@@ -1,6 +1,6 @@
 import { ReactComponent as Blob1 } from '../Assets/Svg/blob1.svg';
 import { ReactComponent as Blob2 } from '../Assets/Svg/blob2.svg';
-import { ReactComponent as Illustration } from '../Assets/Svg/illustration.svg';
+import { ReactComponent as Illustration } from '../Assets/Svg/illustration1.svg';
 import { Link } from 'react-router-dom';
 
 const EventInfo = () => (
