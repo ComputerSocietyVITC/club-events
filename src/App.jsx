@@ -2,7 +2,7 @@ import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useEffect, lazy, Suspense } from 'react';
 
-import { AuthContext } from './contexts/Auth';
+import { AuthProvider } from './contexts/Auth';
 import Navbar from './navbar/Navbar';
 import Footer from './footer/Footer';
 
@@ -25,10 +25,10 @@ const App = () => {
   useEffect(() => (document.body.style.background = '#0F313E'));
   return (
     <Router>
-      <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
-        {/*^^^ design loading screen properly*/}
-        <AuthContext.Provider>
+      <AuthProvider>
+        <Navbar />
+        <Suspense fallback={<div>Loading...</div>}>
+          {/*^^^ design loading screen properly*/}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -43,9 +43,9 @@ const App = () => {
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/createform" element={<CreateForm />} />
           </Routes>
-        </AuthContext.Provider>
-      </Suspense>
-      <Footer />
+        </Suspense>
+        <Footer />
+      </AuthProvider>
     </Router>
   );
 };
