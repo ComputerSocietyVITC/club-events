@@ -15,22 +15,22 @@ module.exports = {
         '1/2': '50%',
         '3/4': '75%',
         '9/10': '90%',
-        '28':'28px',
+        28: '28px',
       },
       colors: {
         navbarbg: '#B5CFCF',
         mainbg: '#054E4E',
         darkergreen: '#1F4B58',
-        boxgreen:'#136267',
-        innerboxgreen:'#1F4B58',
+        boxgreen: '#136267',
+        innerboxgreen: '#1F4B58',
         lightergreen: '#00C597',
         brightkindagreen: '#26D457',
         footercolor: '#B5CFCF',
         fontdark: '#0F333E',
         cyan: '#68E7C8',
         whitekindacolor: '#B5CFCF',
-        buttonColor:'#65E8C8',
-        dull:'#F2F2F2'
+        buttonColor: '#65E8C8',
+        dull: '#F2F2F2',
       },
       borderRadius: {
         large: '28px',
@@ -81,9 +81,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['focus'],
+    },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/forms')],
 };
